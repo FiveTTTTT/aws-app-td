@@ -14,7 +14,7 @@ const authors = JSON.stringify([
 ]);
 
 const metrics = JSON.stringify([
-    { hostname: "Theodore cadet", countryOfBirth: "France", yearOfBirth: 2000 }
+    { hostname: "Theodore cadet", espace_disque: "10Go" }
 ]);
 
 const requestListener = function (req, res) {
