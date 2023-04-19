@@ -13,6 +13,10 @@ const authors = JSON.stringify([
     { name: "Kahlil Gibran", countryOfBirth: "Lebanon", yearOfBirth: 1883 }
 ]);
 
+const metrics = JSON.stringify([
+    { hostname: "Theodore cadet", countryOfBirth: "France", yearOfBirth: 2000 }
+]);
+
 const requestListener = function (req, res) {
     res.setHeader("Content-Type", "application/json");
     switch (req.url) {
@@ -23,6 +27,10 @@ const requestListener = function (req, res) {
         case "/authors":
             res.writeHead(200);
             res.end(authors);
+            break
+        case "/metrics":
+            res.writeHead(200);
+            res.end(metrics);
             break
         default:
             res.writeHead(404);
